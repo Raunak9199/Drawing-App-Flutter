@@ -25,7 +25,7 @@ class _DrawingScreenState extends State<DrawingScreen> {
 
   final _globalKey = GlobalKey();
 
-  /*  void _undo() {
+  void _undo() {
     for (int i = _lines.length - 1; i >= 0; i--) {
       if (_lines[i].isNewLine) {
         _lines.removeAt(i);
@@ -35,12 +35,12 @@ class _DrawingScreenState extends State<DrawingScreen> {
       }
     }
     setState(() {});
-  } */
-  void _undo() {
+  }
+  /* void _undo() {
     if (_lines.isNotEmpty) {
       _lines.removeLast();
     }
-  }
+  } */
 
   void _save() async {
     try {
